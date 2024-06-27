@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #f4f4f4;
+    display: flex;
+}
+
+#typed-name {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    padding: 60px 20px 20px 60px; /* Adjust padding to create space from the top and left */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last item */
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+    width: 20px; /* Ensure icons have a fixed width */
+    text-align: center; /* Center the icon within its space */
+}
+
+.sidebar .social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add some margin above social media icons */
+    flex-grow: 0; /* Prevent the social media container from growing */
+}
+
+.sidebar .social-media a {
+    color: #fff;
+    font-size: 24px;
+    text-align: center; /* Center the icon within its space */
+    width: 40px; /* Ensure each icon has a fixed width */
+}
+
+.sidebar hr {
+    border: 0; /* Remove the default border */
+    height: 1px; /* Set the height of the line */
+    background-color: #fff; /* Set the color of the line */
+    margin-top: 20px; /* Add some space above the line */
+    margin-bottom: 20px; /* Add some space below the line */
+    width: 100%; /* Make sure the line spans the full width of the container */
+}
+
+
+.main-content {
+    margin-left: 280px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section hr {
+    border: 1px solid #f4f4f4;
+    margin: 10px 0 20px;
+}
+
+.section p, .section .project-highlight, .section .education-details {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-highlight {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-highlight:hover {
+    background-color: #313b5e;
+    color:#febf4f;
+}
+
+.project-highlight h3 {
+    margin-top: 0;
+}
+
+.project-highlight .tech-and-concepts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.project-highlight .tech-item,
+.project-highlight .concept-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.project-highlight .tech-item img,
+.project-highlight .concept-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.project-highlight .tech-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.project-highlight .tech-item span,
+.project-highlight .concept-item span {
+    font-size: 16px;
+}
+
+.container p {
+    color: #000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
