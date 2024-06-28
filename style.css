@@ -114,6 +114,25 @@ body {
     color:#febf4f;
 }
 
+.project-highlight a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-highlight a:visited {
+    color: inherit; /* Keep the color the same as the parent element */
+}
+
+.project-highlight a:hover, .project-highlight a:active {
+    color: inherit; /* Keep the color the same as the parent element */
+    text-decoration: none; /* No underline on hover or active */
+}
+
+.project-highlight a h3 {
+    margin: 0; /* Remove default margin from heading */
+    color: inherit; /* Ensure heading color is inherited from parent */
+}
+
 .project-highlight h3 {
     margin-top: 0;
 }
@@ -159,4 +178,57 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+.skills-section {
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background: #313b5e;
+    color: #fff;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: #515c7e;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #f4f4f4;
+    color: #000;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+    border: 1px solid #313b5e;
+    border-radius: 5px;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

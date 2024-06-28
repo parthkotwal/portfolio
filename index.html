@@ -64,9 +64,8 @@
             <h2>Projects</h2>
             <hr>
 
-            <a href="">
             <div class="project-highlight">
-                <h3>E-commerce Platform</h3>
+                <a href="https://github.com/NibsH/CodeForUberComp" target="_blank"><h3>E-commerce Platform</h3></a>
                 <p>Designed and developed a scalable e-commerce platform using the MERN stack.</p>
                 <div class="tech-and-concepts">
                     <div class="tech-item">
@@ -85,7 +84,6 @@
                     </div>
                 </div>
             </div>
-            </a>
 
             <div class="project-highlight">
                 <h3>Project Management Tool</h3>
@@ -101,7 +99,41 @@
         <section id="skills" class="section">
             <h2>Skills</h2>
             <hr>
-            <p>Details about your skills go here.</p>
+            <div class="skills-section">
+                <h2>Languages and Frameworks</h2>
+                <div class="tabs">
+                    <div class="tab" onclick="openTab(event, 'python')">Python</div>
+                    <div class="tab" onclick="openTab(event, 'r')">R</div>
+                    <div class="tab" onclick="openTab(event, 'cpp')">C++</div>
+                    <div class="tab" onclick="openTab(event, 'java')">Java</div>
+                    <div class="tab" onclick="openTab(event, 'ht')">HTML/CSS/JS</div>
+                </div>
+                <div id="python" class="tab-content">
+                    <div class="embed-container">
+                        <iframe src="https://repl.it/@parthkotwal265/PythonExample?lite=true" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="r" class="tab-content">
+                    <div class="embed-container">
+                        <iframe src="https://repl.it/@parthkotwal265/RExample?lite=true" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="cpp" class="tab-content">
+                    <div class="embed-container">
+                        <iframe src="https://repl.it/@parthkotwal265/CPPExample?lite=true" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="java" class="tab-content">
+                    <div class="embed-container">
+                        <iframe src="https://repl.it/@parthkotwal265/JavaExample?lite=true" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="ht" class="tab-content">
+                    <div class="embed-container">
+                        <iframe src="https://repl.it/@parthkotwal265/HTMLExample?lite=true" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="section">
@@ -142,6 +174,23 @@
     
             type();  // Start the typing animation
         });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Open the first tab by default
+        document.getElementsByClassName("tab")[0].click();
     </script>
     
     
