@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Kotwal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://github.com/PeeKay26/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/parth-kotwal-48b160247/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:parthkotwa07@gmail.com" target="_blank"><i class="fab fa-solid fa-envelope"></i></a>
+        </div>
+        <hr>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <p id="typed-name"></p>
+        </header>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <hr>
+            <p>Hi, I'm Parth, a high school senior with a background in data science and machine learning, along with additional experience in web development. I am passionate about applying machine learning and artificial intelligence to scientific disciplines such as astrophysics, quantum physics, and medicine.</p>
+            <p>In my spare time, I enjoy playing Red Dead Redemption 2 or FIFA, following my favorite team FC Barcelona, reviewing restaurants, or watching Veritasium and 3Blue1Brown on YouTube!</p>
+            <p>Please feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work!</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <hr>
+            <p>Details about your experience go here.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <hr>
+
+            <div class="education-details">
+                <h3>Eastlake High School</h3>
+                <p><i>September 2021 - June 2025</i></p>
+                <p>Advanced placement coursework in computer science, calculus, chemistry, astronomy and data structures.</p>
+                <p>GPA: 3.90</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <hr>
+
+            <div class="project-highlight">
+                <a href="https://github.com/NibsH/CodeForUberComp" target="_blank"><h3>E-commerce Platform</h3></a>
+                <p>Designed and developed a scalable e-commerce platform using the MERN stack.</p>
+                <div class="tech-and-concepts">
+                    <div class="tech-item">
+                        <img src="python.png" alt="Python" class="tech-icon">
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="matplotlib.png" alt="Matplotlib" class="tech-icon">
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="concept-item">
+                        <span>Backpropagation</span>
+                    </div>
+                    <div class="concept-item">
+                        <span>Algorithms</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-highlight">
+                <h3>Project Management Tool</h3>
+                <p>Created a project management tool to enhance team collaboration and tracking.</p>
+            </div>
+
+            <div class="project-highlight">
+                <h3>Data Analysis Pipeline</h3>
+                <p>Developed a data analysis pipeline using Python to process and visualize data.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="abt">
+    <div class="skills-container">
+        <h2>Skills</h2>
+
+        <!-- Languages -->
+        <div class="skills-group">
+            <h3>Languages</h3>
+            <div class="skill-icons">
+                <img src="language1-icon.png" alt="Language 1">
+                <img src="language2-icon.png" alt="Language 2">
+                <img src="language3-icon.png" alt="Language 3">
+                <!-- Add more language icons as needed -->
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skills-group">
+            <h3>Frameworks</h3>
+            <div class="skill-icons">
+                <img src="framework1-icon.png" alt="Framework 1">
+                <img src="framework2-icon.png" alt="Framework 2">
+                <img src="framework3-icon.png" alt="Framework 3">
+                <!-- Add more framework icons as needed -->
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-group">
+            <h3>Tools</h3>
+            <div class="skill-icons">
+                <img src="tool1-icon.png" alt="Tool 1">
+                <img src="tool2-icon.png" alt="Tool 2">
+                <img src="tool3-icon.png" alt="Tool 3">
+                <!-- Add more tool icons as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <hr>
+            <p><a href="mailto:parthkotwa07@gmail.com">parthkotwa07@gmail.com</a></p>
+            <p>+1 (425) 428-8748</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="text">&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const name = "Parth Kotwal";  // Replace with your name
+            const typedNameElement = document.getElementById('typed-name');
+            let index = 0;
+
+            function type() {
+                if (index < name.length) {
+                    typedNameElement.innerHTML += name.charAt(index);
+                    index++;
+                    setTimeout(type, 150);  // Adjust typing speed here
+                } else {
+                    setTimeout(reset, 3000);  // Wait 3 seconds before resetting
+                }
+            }
+
+            function reset() {
+                index = 0;  // Reset the index
+                typedNameElement.innerHTML = '';  // Clear the typed name
+                type();  // Start typing again immediately
+            }
+
+            type();  // Start the typing animation
+        });
+
+        const programmingLanguages = [
+            { name: 'Python', logo: 'images/python.png' },
+            { name: 'Java', logo: 'images/java.png' },
+            { name: 'R', logo: 'images/r.png' },
+            { name: 'C++', logo: 'images/cpp.png' },
+            { name: 'JS', logo: 'images/js.png' }
+        ];
+        const frameworksLibraries = [
+            { name: 'Pandas', logo: 'images/pandas.png' },
+            { name: 'Scikit-learn', logo: 'images/scikit.png' },
+            { name: 'NumPy', logo: 'images/numpy.png' },
+            { name: 'Matplotlib', logo: 'images/matplotlib.png' },
+            { name: 'dplyr', logo: 'images/dplyr.png' }
+        ];
+        const toolsTechnologies = [
+            { name: 'Git', logo: 'images/git.png' },
+            { name: 'Figma', logo: 'images/figma.png' },
+            { name: 'VS Code', logo: 'images/vscode.png' }
+        ];
+
+        const skillsCategories = {
+            'programming-languages': programmingLanguages,
+            'frameworks-libraries': frameworksLibraries,
+            'tools-technologies': toolsTechnologies
+        };
+
+        Object.keys(skillsCategories).forEach(category => {
+            const container = document.getElementById(category);
+            skillsCategories[category].forEach(skill => {
+                const skillItem = document.createElement('div');
+                skillItem.className = 'skill-item';
+                
+                const img = document.createElement('img');
+                img.src = skill.logo;
+                img.alt = skill.name + ' logo';
+                
+                const span = document.createElement('span');
+                span.textContent = skill.name;
+                
+                skillItem.appendChild(img);
+                skillItem.appendChild(span);
+                container.appendChild(skillItem);
+            });
+        });
+
+    </script>
+    
+    
+</body>
+</html>
