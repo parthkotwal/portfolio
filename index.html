@@ -110,7 +110,7 @@
             <h2 class="text-4xl font-bold text-custom-red mb-12 text-center">About Me...</h2>
             <div class="prose prose-lg max-w-none text-custom-red">
                 <p class="text-xl leading-relaxed mb-6">
-                    Hello, I'm Parth, a Computer Science student at the <span class="uw-purple">University of Washington, Seattle,</span> with a <span class="fiery-text">fiery</span> passion for data science, machine learning, and using CS to positively impact communities. I am also super interested in exploring how ML can be applied in the context of astrophysics (black holes, particle physics) and security (malware detection, adversarial ML).
+                    Hello, I'm Parth, a Computer Science student at the <span class="uw-purple">University of Washington, Seattle,</span> with a <span class="fiery-text">fiery</span> passion for data science, machine learning, and using CS to positively impact communities. I am also super interested in exploring how ML can be applied in the context of astrophysics (black holes, particle physics, time-domain) and security (malware detection, adversarial ML), or just issues in my everyday life.
                 </p>
                 
                 <div class="mt-12">
@@ -211,6 +211,26 @@
                     <p class="text-custom-red text-lg leading-relaxed">
                         Building a cross-platform Spotify queue manager with Django, Vue.js, and the Spotify Web API, allowing users to save, export, and restore sessions across devices. Created a ‘suggest’ feature using audio feature clustering and cosine similarity for mood-based recommendations. Deploying the backend using AWS Elastic Beanstalk, S3 for media storage and RDS as the primary relational database
 
+                    </p>
+                </div>
+
+                <!-- braai CNN -->
+                <div class="bg-white border border-gray-100 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-semibold text-custom-red">Transient Detection with braai CNN</h3>
+                        <a href="https://github.com/parthkotwal/quequeue" target="_blank" 
+                           class="text-custom-red hover:text-custom-red-light transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">PyTorch</span>
+                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">CuPy</span>
+                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">NumPy</span>
+                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Scikit-learn</span>
+                    </div>
+                    <p class="text-custom-red text-lg leading-relaxed">
+                        Engineered a data pipeline to classify real/bogus astrophysical transients in Zwicky Transient Facility image triplets. Reimplemented each of the original CNN’s layers from scratch using CuPy and NumPy, optimizing convolutions and pooling with im2col for 99.97% reduction in training time. Benchmarked CuPy CNN against a PyTorch counterpart and classical models, achieving ROC AUC=0.91 and F1=0.82
                     </p>
                 </div>
 
