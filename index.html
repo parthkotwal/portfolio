@@ -13,6 +13,10 @@
     <link rel="icon" type="image/x-icon" href="images/golden-retriever-dog-breed-info.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- KaTeX: render math like LaTeX in the page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false},{left:'$',right:'$',display:false}]});"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <style>
@@ -43,6 +47,10 @@
             color: #E6456B;
         }
 
+    </style>
+    <style>
+        /* Make KaTeX match surrounding text size */
+        .katex { font-size: 1em; vertical-align: middle; }
     </style>
     <script>
         tailwind.config = {
@@ -124,7 +132,7 @@
                     <div class="grid md:grid-cols-2 gap-4">
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-custom-red rounded-full mt-3 flex-shrink-0"></div>
-                            <span class="text-lg">Playing Red Dead Redemption 2 or FIFA</span>
+                            <span class="text-lg">Playing the latest FIFA, Red Dead Redemption 2, and more</span>
                         </div>
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-custom-red rounded-full mt-3 flex-shrink-0"></div>
@@ -132,18 +140,14 @@
                         </div>
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-custom-red rounded-full mt-3 flex-shrink-0"></div>
-                            <span class="text-lg">Reviewing restaurants, cafes, and bakeries on <a href="https://beliapp.co/app/kotwal" class="beli-link">Beli (please follow me)</a></span>
+                            <span class="text-lg">Reviewing restaurants, cafes, and bakeries on <a href="https://beliapp.co/app/kotwal" class="beli-link">Beli!</a></span>
                         </div>
                         <div class="flex items-start space-x-3">
                             <div class="w-2 h-2 bg-custom-red rounded-full mt-3 flex-shrink-0"></div>
-                            <span class="text-lg">Listening to any music, from Travis Scott to Vishal Shekhar</span>
+                            <span class="text-lg">Expanding my fragrance collection ($n = 8$)</span>
                         </div>
                     </div>
                 </div>
-                
-                <p class="text-xl leading-relaxed mt-12">
-                    Feel free to explore my projects and get in touch if you'd like to collaborate or learn more about my work!
-                </p>
             </div>
         </div>
     </section>
@@ -155,38 +159,14 @@
             <div class="space-y-12">
                 <div class="border-l-4 border-custom-red pl-8 relative">
                     <div class="absolute -left-3 top-0 w-6 h-6 bg-custom-red rounded-full"></div>
-                    <h3 class="text-2xl font-semibold text-custom-red mb-2">Machine Learning Intern</h3>
-                    <p class="text-custom-red-light font-medium text-lg mb-4">miniOrange • July 2024 - September 2024</p>
-                    <ul class="space-y-3 text-lg text-custom-red">
-                        <li class="flex items-start space-x-3">
-                            <span class="text-custom-red mt-2">•</span>
-                            <span>Constructed a tuned decision tree-based malware detection system (94% accuracy, 92% weighted precision) on 20K+ samples, outperforming prior SVM benchmark by 12%</span>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <span class="text-custom-red mt-2">•</span>
-                            <span>Created a k-means clustering pipeline on 10M+ login records for anomaly detection in ISP authentication systems; contributed to integration planning for adaptive security infrastructure</span>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <span class="text-custom-red mt-2">•</span>
-                            <span>Documented model training and deployment steps, reducing onboarding and retraining time for AI/security teams</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-2xl font-semibold text-custom-red mb-2">Machine Learning Researcher</h3>
+                    <p class="text-custom-red-light font-medium text-lg mb-4">University of Washington SyFI Lab • October 2025 - Present</p>
                 </div>
-                
+
                 <div class="border-l-4 border-custom-red pl-8 relative">
                     <div class="absolute -left-3 top-0 w-6 h-6 bg-custom-red rounded-full"></div>
-                    <h3 class="text-2xl font-semibold text-custom-red mb-2">Financial Data Science Intern</h3>
-                    <p class="text-custom-red-light font-medium text-lg mb-4">Stonehaven Capital Management • September 2023 - November 2023</p>
-                    <ul class="space-y-3 text-lg text-custom-red">
-                        <li class="flex items-start space-x-3">
-                            <span class="text-custom-red mt-2">•</span>
-                            <span>Supported the development of a data pipeline to assess IPO success, using competitor performance metrics and historical market data</span>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <span class="text-custom-red mt-2">•</span>
-                            <span>Automated preprocessing of 6+ financial datasets via Yahoo Finance APIs, creating visualizations for each dataset</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-2xl font-semibold text-custom-red mb-2">Software Engineer Intern - Machine Learning</h3>
+                    <p class="text-custom-red-light font-medium text-lg mb-4">miniOrange • July 2024 - September 2024</p>
                 </div>
             </div>
         </div>
@@ -215,9 +195,7 @@
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Docker</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">PostgreSQL</span>
                     </div>
-                    <p class="text-custom-red text-lg leading-relaxed">
-                        Designed a Spotify queue manager allowing save/export/restore listening sessions across devices, reducing queue restoration time by at least 75%. Implemented a song recommendation engine combining audio features and artist/genre embeddings, clustering queues for mood and artist-coherent suggestions. Deployed the containerized Django backend using AWS Elastic Beanstalk, S3 (media storage), and RDS (relational data). Automated deployments using a custom GitHub Actions CI/CD pipeline with Docker and AWS Elastic Container Registry, cutting manual release time from 8 minutes to 2.5 minutes
-                    </p>
+                    <p class="text-custom-red text-lg leading-relaxed">Django + Vue app to save, restore and recommend Spotify queues. Built to address a problem faced by Parth Kotwal everyday</p>
                 </div>
 
                 <!-- braai CNN -->
@@ -235,9 +213,7 @@
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">NumPy</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Scikit-learn</span>
                     </div>
-                    <p class="text-custom-red text-lg leading-relaxed">
-                        Engineered a data pipeline to classify real/bogus astrophysical transients in Zwicky Transient Facility image triplets. Reimplemented each of the original CNN’s layers from scratch using CuPy and NumPy, optimizing convolutions and pooling on GPUs with im2col for 99.97% reduction in training time. Benchmarked CuPy CNN against a PyTorch counterpart and classical models, achieving ROC AUC=0.91 and F1=0.82.
-                    </p>
+                    <p class="text-custom-red text-lg leading-relaxed">Custom CuPy/NumPy CNN for astrophysical transient detection. Based on the "Real-bogus classification for the Zwicky Transient Facility using deep learning" <a>paper</a></p>
                 </div>
 
                 <!-- MUNNW SMS -->
@@ -250,14 +226,12 @@
                         </a>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Flask</span>
+                        <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">FastAPI</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">JS</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">PostgreSQL</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Tailwind CSS</span>
                     </div>
-                    <p class="text-custom-red text-lg leading-relaxed">
-                        Established a Flask-based SMS automation system using Twilio and PostgreSQL, delivering real-time announcements for 2,100+ conference participants across four student conferences. Replaced staff-dependent workflow with rapid, multithreaded SMS blasts, cutting announcement latency by 70%. Built a secure admin dashboard with scheduled messaging, bulk contact management, and data validation to eliminate raw database access needs.
-                    </p>
+                    <p class="text-custom-red text-lg leading-relaxed">FastAPI + Twilio SMS admin for conference announcements and scheduling. Currently used by the largest Model United Nations conferences in the Pacific Northwest</p>
                 </div>
 
                 <!-- Star Class Forest -->
@@ -275,9 +249,7 @@
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">NumPy</span>
                         <span class="px-3 py-1 bg-custom-red/10 text-custom-red text-sm font-medium rounded-full">Matplotlib</span>
                     </div>
-                    <p class="text-custom-red text-lg leading-relaxed">
-                        Trained and evaluated five machine learning models on stellar data (luminosity, temperature, absolute magnitude) to classify 100,000 stars into 7 spectral types (Morgan-Keenan system). Optimized a random forest model to 95% accuracy and 96% precision; visualized key features to improve interpretability and connect machine learning with scientific modeling.
-                    </p>
+                    <p class="text-custom-red text-lg leading-relaxed">Random-forest-based stellar spectral classifier with high accuracy and interpretability.</p>
                 </div>
 
             </div>
@@ -296,8 +268,8 @@
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">Python</span>
                         <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">JavaScript</span>
-                        <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">R</span>
                         <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">Java</span>
+                        <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">R</span>
                         <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">C++</span>
                         <span class="px-4 py-2 bg-custom-red text-white text-lg font-medium rounded-lg hover:bg-custom-red-dark transition-colors duration-300">HTML/CSS</span>
                     </div>
@@ -310,7 +282,7 @@
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">PyTorch</span>
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">Scikit-learn</span>
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">Django</span>
-                        <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">Flask</span>
+                        <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">FastAPI</span>
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">Vue.js</span>
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">CuPy</span>
                         <span class="px-4 py-2 border-2 border-custom-red text-custom-red text-lg font-medium rounded-lg hover:bg-custom-red hover:text-white transition-all duration-300">NumPy</span>
@@ -325,14 +297,15 @@
                     <h3 class="text-2xl font-semibold text-custom-red mb-6">Tools</h3>
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Git</span>
+                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Linux</span>
+                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">AWS (Elastic Beanstalk, ECR, EC2, S3, RDS, CloudFront, Bedrock)</span>
+                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Docker</span>
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Jupyter</span>
-                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">AWS (Elastic Beanstalk, ECR, EC2, S3, RDS, Cloudfront)</span>
+                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">PostgreSQL</span>
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">GCP (Translation API)</span>
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Twilio</span>
-                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">PostgreSQL</span>
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Twilio</span>
                         <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Visual Studio Code</span>
-                        <span class="px-4 py-2 bg-custom-red/10 text-custom-red text-lg font-medium rounded-lg border border-custom-red/20 hover:bg-custom-red/20 transition-colors duration-300">Eclipse</span>
                     </div>
                 </div>
             </div>
